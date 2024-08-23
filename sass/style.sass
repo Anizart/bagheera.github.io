@@ -1,0 +1,93 @@
+$color-accent: #10c6b4
+$text-color: #444
+$text-color-white: #fff
+
+.hidden
+    display: none
+
+//+ block-style:
+.link
+    width: 170px
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $text-color-white
+    background-color: $color-accent
+
+.title
+    font-size: 24px
+    text-align: center
+    margin: 70px 0
+
+.accent
+    color: #0db2a2
+
+//+ Section beginning:
+.beginning
+    min-height: 600px
+    height: 100vh
+    color: $text-color-white
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+    &__text
+        font-size: 16px
+    &__main-text
+        font-weight: 500
+        font-size: 40px
+        line-height: 125%
+        color: #fff
+        margin: 8px 0
+.beginning-bg
+    background: url(../img/bg-desktop.jpg) center /cover no-repeat
+    background-color: #5a5c23
+
+//+ Section priorities:
+.priorities
+    &__wrapper
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 70px 105px
+    &__element
+        width: 230px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:hover > .priorities__heading:after
+            width: 140px
+            transition: 1s cubic-bezier(.5, -2, .5, 2)
+    &__img
+        width: 100px
+        overflow: hidden
+    &__heading
+        font-size: 20px
+        line-height: 1.5
+        text-align: center
+        margin-top: 35px
+        &:after
+            content: ""
+            display: block
+            width: 80px
+            height: 1px
+            background: #A7A7A7
+            margin: 25px auto
+    &__text
+        font-size: 12px
+        line-height: 1.5
+        text-align: center
+        color: #444
+
+//+ Section help:
+
+//+ media-Section beginning:
+@media (max-width: 1050px)
+    .beginning-bg
+        background: url(../img/bg-img_mobile.jpg) center /cover no-repeat
+@media (max-width: 425px)
+    .beginning__main-text
+        font-size: 30px
+
+//+ media-Section help:
