@@ -11,7 +11,7 @@ $(document).ready(() => {
 window.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector('.cards-wrapper'),
           cards = wrapper.querySelectorAll('.cards-wrapper__card');
-          images = wrapper.querySelectorAll('.cards-wrapper__img');
+          // images = wrapper.querySelectorAll('.cards-wrapper__img');
           
     cards.forEach((card, i) => {
         card.addEventListener('click', () => {
