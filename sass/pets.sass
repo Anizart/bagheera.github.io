@@ -1,0 +1,54 @@
+//+ main:
+.main-margin
+    margin: 160px 0 108px
+    
+//+ title:
+.title
+    font-weight: 400
+    font-size: 27px
+    text-transform: uppercase
+    margin-bottom: 70px
+    .accent
+        color: #0db2a2
+
+//+ cards:
+.cards-wrapper
+    display: flex
+    flex-direction: row-reverse
+    justify-content: center
+    flex-wrap: wrap
+    gap: 70px 30px
+    margin-bottom: 60px
+    &__card
+        width: 270px
+        min-height: 245px
+        height: 100%
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        cursor: pointer
+    &__card:hover > .cards-wrapper__img
+        transition-duration: 0.5s
+        transform: scale3d(1.08, 1.08, 8)
+    &__img
+        height: 178px
+        object-fit: center
+        perspective: 400px
+    &__wrapper
+        color: #000
+        background-color: #fff
+        font-size: 24px
+        line-height: 1.1
+        text-align: center
+        padding: 8px 0 15px
+    &__wrapper p + p
+        font-style: italic
+        font-size: 14px
+        margin-top: 7px
+
+//+ media-main && title:
+@media (max-width: 829px)
+    .main-margin
+        margin-top: 140px
+    .title
+        text-align: center
