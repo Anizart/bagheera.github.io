@@ -1,0 +1,36 @@
+//+ base:
+.main-margin
+    margin: 160px 0 108px
+    
+.title
+    font-size: 24px
+    text-transform: uppercase
+    margin-bottom: 70px
+
+.accent
+    color: #0db2a2
+
+//+ products:
+.products
+    display: flex
+    justify-content: center
+    gap: 28px 70px
+    &__wrapper
+        max-width: 470px
+        width: 100%
+        p + p
+            margin-top: 18px
+    &__img
+        max-height: 378px
+        max-width: 630px
+        width: 100%
+        object-fit: cover
+
+//+ media-main && title && products:
+@media (max-width: 990px)
+    .products
+        flex-wrap: wrap
+
+@media (max-width: 829px)
+    .main-margin
+        margin-top: 140px

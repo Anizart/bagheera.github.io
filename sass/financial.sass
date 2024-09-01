@@ -1,0 +1,38 @@
+//+ base:
+.main-margin
+    margin: 160px 0 108px
+    
+.title
+    font-weight: 400
+    font-size: 24px
+    text-transform: uppercase
+    margin-bottom: 28px
+
+.accent
+    color: #0db2a2
+
+//+ donation:
+.donation
+    display: flex
+    justify-content: center
+    gap: 28px 70px
+    &__wrapper
+        p + h2
+            margin-top: 50px
+        p + p
+            margin-top: 18px
+    &__text
+        color: #000
+        font-size: 14px
+        line-height: 1.5
+.img
+    max-height: 262px
+    width: 100%
+    max-width: 529px
+
+//+ media-main && title && donation:
+@media (max-width: 829px)
+    .main-margin
+        margin-top: 140px
+    .donation
+        flex-wrap: wrap

@@ -1,0 +1,45 @@
+//+ base:
+.main-margin
+    margin: 160px 0 108px
+    
+.title
+    font-size: 24px
+    text-transform: uppercase
+    margin-bottom: 70px
+
+.accent
+    color: #0db2a2
+
+//+ medicines:
+.medicines
+    display: flex
+    justify-content: center
+    gap: 28px 70px
+    &__wrapper
+        display: flex
+        gap: 18px 70px
+    p + p
+        margin-top: 18px
+    &__block
+        width: 100%
+        max-width: 200px
+    &__img
+        max-height: 399px
+        width: 100%
+        max-width: 598px
+
+//+ media-main && title && medicines:
+@media (max-width: 1020px)
+    .title
+        text-align: center
+    .medicines
+        flex-wrap: wrap
+
+@media (max-width: 829px)
+    .main-margin
+        margin-top: 140px
+
+@media (max-width: 380px)
+    .medicines__wrapper
+        justify-content: center
+        flex-wrap: wrap

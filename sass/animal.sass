@@ -1,0 +1,47 @@
+//+ base:
+.main-margin
+    margin: 160px 0 108px
+    
+.title
+    font-weight: 400
+    font-size: 27px
+    text-transform: uppercase
+    margin-bottom: 70px
+
+.accent
+    color: #0db2a2
+
+//+ animal:
+.animal
+    display: flex
+    justify-content: center
+    gap: 28px 70px
+    &__img
+        max-height: 348px
+        width: 100%
+        max-width: 580px
+        object-fit: cover
+    &__wrapper
+        max-width: 520px
+        p + h2
+            margin-top: 18px
+        p + p
+            margin-top: 8px
+    &__heading
+        font-size: 16px
+        line-height: 1.3
+        margin-bottom: 18px
+    &__text
+        color: #000
+        font-size: 14px
+        line-height: 1.5
+
+//+ media-main && title:
+@media (max-width: 940px)
+    .animal
+        flex-wrap: wrap
+    .title
+        text-align: center
+@media (max-width: 829px)
+    .main-margin
+        margin-top: 140px
