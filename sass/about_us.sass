@@ -2,6 +2,23 @@
 .main-margin
     margin: 160px 0 108px
 
+//+ base:
+.title
+    font-weight: 400
+    font-size: 27px
+    text-transform: uppercase
+    margin-bottom: 70px
+    .accent
+        color: #0db2a2
+
+.button
+    color: #fff
+    background-color: #0db2a2
+    padding: 15px 45px
+    &:hover
+        opacity: 80%
+        transition: .8s
+
 //+ appeal:
 .appeal
     display: flex
@@ -12,13 +29,6 @@
         height: auto
         max-width: 585px
         font-size: 14px
-    &__title
-        font-size: 24px
-        line-height: 1.5
-        text-transform: uppercase
-        margin-bottom: 28px
-        .accent
-            color: #0DB2A2
     &__subtitle
         color: #000
         font-weight: 600
@@ -34,12 +44,68 @@ img.img
     width: 100%
     max-width: 515px
 
-//+ media-appeal:
-@media (min-width: 630px) and (max-width: 1199px)
-    .appeal__information
-        text-align: center
+.feedback
+    padding: 70px 0
+    &__form
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: space-between
+    &__inputs
+        width: 100%
+        max-width: 58%
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__btns
+        display: flex
+        flex-wrap: wrap-reverse
+        gap: 28px
+    &__input
+        width: inherit
+        padding: 10px 25px
+        &:focus
+            background-color: #10c6b488
+    &__reset
+        background-color: #ee9292
+    &__wrapper
+        width: 100%
+        max-width: 30%
+    &__area
+        height: 100%
+        width: 100%
+        resize: none
+        padding: 10px 25px
+        &:focus
+            background-color: #10c6b488
+
+//+ feedback:
+@media (max-width: 850px)
+    .feedback
+        &__form
+            flex-direction: column
+        &__inputs
+            min-width: 100%
+        &__wrapper
+            min-width: 100%
+            height: 180px
+            order: -1
+            margin-bottom: 20px
+            
 
 //+ media-main:
 @media (max-width: 829px)
     .main-margin
         margin-top: 140px
+    
+//+ media-appeal:
+@media (min-width: 630px) and (max-width: 1199px)
+    .appeal__information
+        text-align: center
+    .title
+        text-align: center
+
+//+ button:
+@media (max-width: 380px)
+    .button
+        width: 100%
