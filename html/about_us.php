@@ -69,6 +69,9 @@
 
                 <section class="feedback">
                     <h2 class="title">ваши <span class="accent">пожелания</span> или <span class="accent">замечания</span></h2>
+                    <div class="feedback__information">
+                        *На, указанную Вами, почту придёт СМС, если Вы желаете стать волонтёром и сотрудничать с нашим приютом, то ответьте на данное сообщение.
+                    </div>
                     <form class="feedback__form" action="form.php" method="post">
                         <div class="feedback__inputs">
                             <input class="feedback__input" type="text" name="username" placeholder="Имя: ( до 10 символов )" tabindex="1" required>
